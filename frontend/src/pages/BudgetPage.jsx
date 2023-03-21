@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from "axios";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useStateContext } from "../contexts/ContextProvider";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
@@ -10,12 +10,8 @@ const BudgetPage = () => {
     const navigate = useNavigate();
 
   return (
-    <div className="flex bg-black">
-    {/* <div className="card-body items-center">
-      <h1 className="card-title text-2xl text-secondary">Your Details</h1>
-      <h2 className="text-lg font-bold">Name: {loginUser.name}</h2>
-      <h4 className="text-md font-bold">Email: {loginUser.email}</h4>
-    </div> */}
+    <>
+    <div className="hero min-h-[83.5vh] flex bg-black">
     <div className="card-body items-center">
       <h2 className="card-title text-2xl text-primary">Your Budget</h2>
       <p className="stat-value my-4">${userSetting.budget}</p>
@@ -73,7 +69,10 @@ const BudgetPage = () => {
         </label>
       </div>
     </div>
+  
   </div>
+  </>
+
   )
 }
 

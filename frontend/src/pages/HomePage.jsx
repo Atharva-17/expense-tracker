@@ -34,7 +34,7 @@ const HomePage = () => {
 	}, [])
 
 	return (
-		<div className="bg-black">
+		<div className=" min-h-[83.5vh] bg-black">
 		<div className="p-8 bg-black" >
 			<div className="flex flex-col-reverse md:flex-row items-center justify-around ">
 				<AddNew />

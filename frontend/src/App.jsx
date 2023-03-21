@@ -9,6 +9,8 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import SettingsPage from "./pages/SettingsPage";
 import BudgetPage from "./pages/BudgetPage";
+import UserPage from "./pages/UserPage";
+import AddNew from "./components/AddNew";
 
 function App() {
   return (
@@ -31,9 +33,10 @@ function App() {
             </ProtectedRoutes>
           }
         />
-		<Route path="/budget" element={<ProtectedRoutes>
+		    <Route path="/budget" element={<ProtectedRoutes>
               <BudgetPage />
             </ProtectedRoutes>} />
+        <Route path="/users" element={<UserPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
       </Routes>

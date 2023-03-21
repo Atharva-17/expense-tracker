@@ -1,21 +1,23 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import { useStateContext } from "../contexts/ContextProvider";
 
 const AddNew = () => {
   const { loginUser, expenses, setExpenses, userSetting, showToastHandler } =
     useStateContext();
+  const navigate = useNavigate();
 
   return (
     <div className="mt-4 md:mt-0">
       <label htmlFor="my-modal" className="btn btn-lg btn-primary">
-        add new expense
+        add new expense &rarr;
       </label>
 
       <input type="checkbox" id="my-modal" className="modal-toggle" />
-      <div className="modal">
-        <div className="modal-box">
+      <div className="modal backdrop-blur-sm">
+        <div className="modal-box bg-zinc-900">
           <label
             htmlFor="my-modal"
             className="btn btn-sm btn-circle absolute right-2 top-2"
@@ -58,8 +60,9 @@ const AddNew = () => {
                 setExpenses((prev) => {
                   return [...prev, data];
                 });
-                showToastHandler("Expense Saved", "success");
                 actions.resetForm();
+                showToastHandler("Expense Saved", "success");
+                navigate();
               } catch (error) {
                 showToastHandler("Save failed", "error");
                 console.log(error);

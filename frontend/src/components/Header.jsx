@@ -84,7 +84,11 @@ const Header = () => {
       <div className="navbar-end">
         <div className="btn btn-ghost normal-case sm:text-xl text-white">
           {loginUser
-            ? `Welcome ${loginUser.name.replace(/ .*/, "")}`
+            ? <>
+                <Link to='/users'>
+                  <div className="flex gap-2"><img src="https://xp.io/storage/2F9L7Hvk.png" width='35px' alt="user" />{loginUser.name.replace(/ .*/, "")}</div>
+                </Link>
+              </>
             : ""}
         </div>
       </div>
