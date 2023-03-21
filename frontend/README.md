@@ -1,14 +1,9 @@
-# mern-expense-tracker-client
+# MERN Expense Tracker [CRUD] Frontend
 
 ### Description
 
-Does just as it says. Track your daily expenses with ease using this expense tracker app. This repository contains frontend code for the mern-expense-tracker app. You can checkout the backend code in [this repo](https://github.com/01-DC/mern-expense-tracker-server)
+ Track your daily expenses. 
 
-### How to use?
-
--   Clone this repo.
--   `cd` into the repo folder and type `npm i` to install all dependencies.
--   Then type `npm run dev` to start the server.
 
 ### Features
 
@@ -30,12 +25,3 @@ Does just as it says. Track your daily expenses with ease using this expense tra
 -   `formik` : Used Formik to quickly design fast and robust forms with features like in-built state control and validation.
 -   `axios` : Used Axios library to make API calls to backend simpler and fast.
 -   `vite` : Used Vite as the build tool. Much faster and developer friendly.
-
-### Screenshots
-
-<img src="./screenshots/Screenshot7.png" width="600" />
-<img src="./screenshots/Screenshot8.png" width="600" />
-<img src="./screenshots/Screenshot9.png" width="600" />
-<img src="./screenshots/Screenshot10.png" width="600" />
-<img src="./screenshots/Screenshot11.png" width="600" />
-<img src="./screenshots/Screenshot12.png" width="600" />

@@ -1,14 +1,8 @@
-# mern-expense-tracker-server
+# MERN Expense Tracker [CRUD] Backend
 
 ### Description
 
-Does just as it says. Track your daily expenses with ease using this expense tracker app. This repository contains backend code for the mern-expense-tracker app. You can checkout the frontend code in [this repo](https://github.com/01-DC/mern-expense-tracker-client)
-
-### How to use?
-
--   Clone this repo.
--   `cd` into the repo folder and type `npm i` to install all dependencies.
--   Then type `npm run server` to start the server.
+Track your daily expenses.
 
 ### Features
 

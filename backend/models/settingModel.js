@@ -1,22 +1,22 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
 const settingSchema = new mongoose.Schema(
-	{
-		userid: {
-			type: String,
-			required: [true, "userid is required"],
-		},
-		budget: {
-			type: Number,
-			default: 0,
-		},
-		categories: {
-			type: [String],
-			default: ["Food", "Entertainment"],
-		},
-	},
-	{ timestamps: true }
-)
+  {
+    userid: {
+      type: String,
+      required: [true, "userid is required"],
+    },
+    budget: {
+      type: Number,
+      default: 0,
+    },
+    categories: {
+      type: [String],
+      default: ["Food", "Entertainment"],
+    },
+  },
+  { timestamps: true }
+);
 
-const settingModel = mongoose.model("settings", settingSchema)
-module.exports = settingModel
+const settingModel = mongoose.model("settings", settingSchema);
+module.exports = settingModel;

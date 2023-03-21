@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Toast from "./components/Toast";
@@ -10,7 +9,6 @@ import RegisterPage from "./pages/RegisterPage";
 import SettingsPage from "./pages/SettingsPage";
 import BudgetPage from "./pages/BudgetPage";
 import UserPage from "./pages/UserPage";
-import AddNew from "./components/AddNew";
 
 function App() {
   return (
@@ -33,9 +31,14 @@ function App() {
             </ProtectedRoutes>
           }
         />
-		    <Route path="/budget" element={<ProtectedRoutes>
+        <Route
+          path="/budget"
+          element={
+            <ProtectedRoutes>
               <BudgetPage />
-            </ProtectedRoutes>} />
+            </ProtectedRoutes>
+          }
+        />
         <Route path="/users" element={<UserPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />

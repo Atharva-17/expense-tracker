@@ -71,7 +71,7 @@ const ExpenseTable = () => {
       </h2>
       <table className="table table-zebra w-full">
         <thead>
-          <tr> 
+          <tr>
             <th>Amount</th>
             <th>Category</th>
             <th>Description</th>

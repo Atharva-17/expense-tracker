@@ -1,29 +1,29 @@
-const express = require("express")
+const express = require("express");
 
 const {
-	addExpense,
-	getAllExpense,
-	editExpense,
-	deleteExpense,
-	splitExpense,
-	splitStatusToggle,
-	getAllSplitExpense,
-} = require("../controllers/expenseController")
+  addExpense,
+  getAllExpense,
+  editExpense,
+  deleteExpense,
+  splitExpense,
+  splitStatusToggle,
+  getAllSplitExpense,
+} = require("../controllers/expenseController");
 
-const router = express.Router()
+const router = express.Router();
 
-router.post("/add-expense", addExpense)
+router.post("/add-expense", addExpense);
 
-router.post("/edit-expense", editExpense)
+router.post("/edit-expense", editExpense);
 
-router.post("/delete-expense", deleteExpense)
+router.post("/delete-expense", deleteExpense);
 
-router.post("/get-expense", getAllExpense)
+router.post("/get-expense", getAllExpense);
 
-router.post("/get-split-expense", getAllSplitExpense)
+router.post("/get-split-expense", getAllSplitExpense);
 
-router.post("/split-expense", splitExpense)
+router.post("/split-expense", splitExpense);
 
-router.post("/toggle-split", splitStatusToggle)
+router.post("/toggle-split", splitStatusToggle);
 
-module.exports = router
+module.exports = router;

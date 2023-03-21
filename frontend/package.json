@@ -1,5 +1,5 @@
 {
-	"name": "client",
+	"name": "frontend",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -8,6 +8,8 @@
 		"build": "vite build",
 		"preview": "vite preview"
 	},
+	"author": "Atharva Pandhare",
+	"license": "MIT",
 	"dependencies": {
 		"axios": "^1.2.1",
 		"daisyui": "^2.43.2",
