@@ -7,7 +7,7 @@ import { ContextProvider } from "./contexts/ContextProvider";
 import App from "./App";
 import "./index.css";
 
-axios.defaults.baseURL = "https://expense-tracker-api-delta.vercel.app/"
+axios.defaults.baseURL = "https://expense-tracker-api-delta.vercel.app"
 // axios.defaults.baseURL = "http://localhost:8090";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
